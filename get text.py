@@ -35,10 +35,10 @@ def save_cleaned_text(text, file_path):
         file.write(text)
 
 # 保存清理后的儒家文本
-save_cleaned_text(confucian_text_clean, r'C:\Users\Admin\Desktop\textassi\confucian_cleaned.txt')
+save_cleaned_text(confucian_text_clean， 'confucian_cleaned.txt')
 
 # 保存清理后的道家文本
-save_cleaned_text(daoist_text_clean, r'C:\Users\Admin\Desktop\textassi\daoist_cleaned.txt')
+save_cleaned_text(daoist_text_clean, 'daoist_cleaned.txt')
 
 def tokenize_with_pynlpir(text):
     # 使用 pynlpir 进行分词，只保留词语而不保留词性标注
@@ -52,9 +52,9 @@ def save_tokenized_text(tokens, file_path):
         file.write(' '.join(tokens))
 
 # 保存分词后的儒家文本
-save_tokenized_text(confucian_tokens,  r'C:\Users\Admin\Desktop\textassi\confucian_tokenized.txt')
+save_tokenized_text(confucian_tokens,  'confucian_tokenized.txt')
 
 # 保存分词后的道家文本
-save_tokenized_text(daoist_tokens,  r'C:\Users\Admin\Desktop\textassi\daoist_tokenized.txt')
+save_tokenized_text(daoist_tokens,  'daoist_tokenized.txt')
 
 pynlpir.close()
