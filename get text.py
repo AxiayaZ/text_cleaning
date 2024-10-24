@@ -10,8 +10,8 @@ def read_text(file_path):
     with open(file_path, 'r', encoding='utf-8') as file:
         return file.read()
 
-confucian_text = read_text(r'C:\Users\Admin\Desktop\textassi\Analects.txt')
-daoist_text = read_text(r'C:\Users\Admin\Desktop\textassi\daodejing.txt')
+confucian_text = read_text('Analects.txt')
+daoist_text = read_text('daodejing.txt')
 
 
 def clean_text(text):
